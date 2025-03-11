@@ -1,6 +1,6 @@
 # 海绵宝宝的自我介绍
 
-<img src="C:\Users\Dell\Pictures\Screenshots\海绵宝宝.png" alt="海绵宝宝形象" width = "200" height = "图片长度" />
+<img src="photo/海绵宝宝.png" alt="海绵宝宝形象" width = "200" height = "图片长度" />
 
 大家好，我是**海绵宝宝**，我的身份是*蟹宝王厨师和社区活跃分子*。以下是我的自我介绍：
 
@@ -55,7 +55,7 @@ print(np.array([1, 2, 3]) ** 2)
 其中执行``print(np.array([1, 2, 3]) ** 2)``可输出结果。
 
 ### 我最喜欢的环境管理工具是conda
-<img src="C:\Users\Dell\Pictures\Screenshots\截图一.png" alt="截图一" width = "800" height = "图片长度" />
+<img src="photo/截图一.png" alt="截图一" width = "800" height = "图片长度" />
 
 ### 我可以在IDE上使用我建立的虚拟环境
-<img src="C:\Users\Dell\Pictures\Screenshots\截图二.png" alt="截图二" width = "800" height = "图片长度" />
+<img src="photo/截图二.png" alt="截图二" width = "800" height = "图片长度" />
