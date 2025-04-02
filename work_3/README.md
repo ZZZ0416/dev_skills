@@ -10,7 +10,11 @@
 
 #### 特征独立性假设
 假设各词项在给定类别下条件独立：
- $P(x₁,x₂,...,xₙ|y)=ΠP(xᵢ|y)$ 
+ $P(x_1,x_2,\ldots,x_n\midy)=\prod_{i=1}^{n}P(x_i\midy)$
+ $P(x_1, x_2, \ldots, x_n \mid y) = \prod_{i=1}^{n} P(x_i \mid y)$
+\begin{equation}
+    P(x_1, x_2, \ldots, x_n \mid y) = \prod_{i=1}^{n} P(x_i \mid y)
+\end{equation}
 
 该假设虽简化计算复杂度，但在实际文本分类中仍保持较高准确率
 
