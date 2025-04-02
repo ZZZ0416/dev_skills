@@ -10,22 +10,18 @@
 
 #### 特征独立性假设
 假设各词项在给定类别下条件独立：
- $P(x_1,x_2,\ldots,x_n\midy)=\prod_{i=1}^{n}P(x_i\midy)$
  $P(x_1, x_2, \ldots, x_n \mid y) = \prod_{i=1}^{n} P(x_i \mid y)$
-\begin{equation}
-    P(x_1, x_2, \ldots, x_n \mid y) = \prod_{i=1}^{n} P(x_i \mid y)
-\end{equation}
 
 该假设虽简化计算复杂度，但在实际文本分类中仍保持较高准确率
 
 #### 贝叶斯定理应用
 邮件分类决策公式：  
- $ŷ=argmaxₖ[P(yₖ)*ΠP(xᵢ|yₖ)]$  
+ $\hat{y} = \mathop{\arg\max}\limits_{k} \left[ P(y_k) \prod P(x_i \mid y_k) \right]$  
 - `P(yₖ)`
 ：类先验概率（训练集中各类别占比）
 - `P(xᵢ|yₖ)`
 ：特征条件概率（采用α=1的拉普拉斯平滑）：
- $P(xᵢ|yₖ)=(count(xᵢ,yₖ)+1)/(∑count(x,yₖ)+N)$   
+ $P(x_i \mid y_k) = \frac{\text{count}(x_i, y_k) + 1}{\left( \sum \text{count}(x, y_k) + N \right)}$   
   其中N为特征总数，避免零概率问题
 
 ---
